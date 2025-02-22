@@ -11,7 +11,7 @@ const Legend = () => {
   useEffect(() => {
     if (!map) return;
 
-    const legend = L.control({
+    const legend = new L.Control({
       position: isMobile ? "bottomright" : "topleft",
     });
 

@@ -21,7 +21,7 @@ const RatingSelector = () => {
         </SelectTrigger>
         <SelectContent>
           {Object.entries(Rating)
-            .filter(([key, value]) =>
+            .filter(([_, value]) =>
               scenario === Scenario.BASE ? value !== Rating.HM : true
             )
             .map(([key, value]) => (

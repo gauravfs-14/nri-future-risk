@@ -12,7 +12,7 @@ import { useCountyStore } from "@/state/county";
 import { useFiltersStore } from "@/state/filters";
 import { useCounties } from "@/clients/api";
 import { Datasource, Hazard, Rating, Scenario } from "@/schema/risk";
-import Legend from "@/components/map/legend";
+import Legend from "@/components/map/Legend";
 
 // Centered over continental US
 const center = { lat: 39.8283, lng: -98.5795 };
@@ -103,7 +103,8 @@ const Map = () => {
         .domain([...new Set(values)].sort());
     }
 
-    return d3.scaleSequential(d3.interpolateOrRd).domain(d3.extent(values));
+    const extent = d3.extent(values) as [number, number];
+    return d3.scaleSequential(d3.interpolateOrRd).domain(extent);
   }, [data, valueField]);
 
   // Function to style each county

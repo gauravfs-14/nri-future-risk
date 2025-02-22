@@ -1,7 +1,6 @@
-import useSWR from "swr";
-import { FeatureCollection, Geometry, Feature } from "geojson";
 import { ChevronsUpDown } from "lucide-react";
 import { useState } from "react";
+import { Feature, Geometry } from "geojson";
 
 import { CountyProperties } from "@/schema/county";
 import {

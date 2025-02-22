@@ -1,22 +1,12 @@
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
-import { CountyProperties } from "@/schema/county";
 import { Datasource, Hazard, Scenario } from "@/schema/risk";
 import { useCountyStore } from "@/state/county";
 import { useFiltersStore } from "@/state/filters";
@@ -166,7 +156,7 @@ const CountyInfoModal = () => {
                     (selectedCounty as any)?.[
                       `${
                         Object.entries(Hazard).find(
-                          ([key, value]) => value === hazard
+                          ([_, value]) => value === hazard
                         )?.[0]
                       }_EALR`
                     ]
@@ -180,7 +170,7 @@ const CountyInfoModal = () => {
                     (selectedCounty as any)?.[
                       `${
                         Object.entries(Hazard).find(
-                          ([key, value]) => value === hazard
+                          ([_, value]) => value === hazard
                         )?.[0]
                       }_RISKR`
                     ]
