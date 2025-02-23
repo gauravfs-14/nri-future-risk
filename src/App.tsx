@@ -64,7 +64,7 @@ export default function Home() {
             <RatingSelector />
             <HazardSelector />
             <ScenarioSelector />
-            {hazard === Hazard.EXHT && <DatasourceSelector />}
+            <DatasourceSelector />
           </div>
 
           <div className="hidden md:flex flex-row gap-4 pointer-events-auto w-1/4">

@@ -5,12 +5,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Datasource } from "@/schema/risk";
+import { Datasource, Hazard } from "@/schema/risk";
 
 import { useFiltersStore } from "@/state/filters";
 
 const DatasourceSelector = () => {
-  const { datasource, setDatasource } = useFiltersStore();
+  const { datasource, setDatasource, hazard } = useFiltersStore();
+
+  if (hazard !== Hazard.EXHT) {
+    return <></>;
+  }
 
   return (
     <div className="flex-1">
