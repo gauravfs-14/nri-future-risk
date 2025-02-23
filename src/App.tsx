@@ -15,8 +15,6 @@ export default function Home() {
   const { hazard, datasource, rating } = useFiltersStore();
 
   // TODO: URL routing to make easier to share
-  // TODO: self-hosting instructions
-  // TODO: set up donation link
 
   const hazardGraphImageUrl = useMemo(() => {
     let imageUrl = "/nri-future-risk/";

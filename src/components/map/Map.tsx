@@ -153,6 +153,7 @@ const Map = () => {
           &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, 
           Data from US Census Bureau, FEMA, and NOAA.
           <a href="https://github.com/fulton-ring/nri-future-risk">View Source on GitHub</a>
+          <a href="https://buymeacoffee.com/herzo175">Donate To The Developers</a>
         `}
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         // url="https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png"
