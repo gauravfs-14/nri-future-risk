@@ -88,7 +88,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-4 pointer-events-auto">
             <Button>
-              <a href="https://github.com/fulton-ring/nri-future-risk/tree/main/data">
+              <a href="https://github.com/fulton-ring/nri-future-risk/tree/main/public">
                 View Datasets
               </a>
             </Button>
