@@ -47,8 +47,6 @@ export default function Home() {
       imageUrl += "_PALR";
     }
 
-    console.log(imageUrl);
-
     return imageUrl + ".png";
   }, [hazard, rating, datasource]);
 
