@@ -32,9 +32,9 @@ This will start the development server and open the tool in your default browser
 
 ## Hosting
 
-To keep this tool from being down again, we recommend forking this repository
-and hosting it with GitHub Pages. It currently has all the code needed to deploy
-to GitHub Pages, you'll just need to enable GitHub Pages in your fork's
-repository settings.
+To reduce the risk of this tool being taken down again, we recommend forking
+this repository and hosting it with GitHub Pages. It currently has all the code
+needed to deploy to GitHub Pages, you'll just need to enable GitHub Pages in
+your fork's repository settings.
 
 More deployment guides to come as needed.
