@@ -7,8 +7,8 @@ was removed from the public by the US Government in February, 2025. It
 references the following datasets which were downloaded before the tool was
 taken down:
 
-- [NRI Future Risk Master Datasheet](https://github.com/fulton-ring/nri-future-risk/tree/main/public/nri-future-risk/NRI_Future_Risk_Master_Datasheet_12052024.xlsx)
-- [NRI Data Dictionary](https://github.com/fulton-ring/nri-future-risk/tree/main/public/nri-future-risk/NRI_Data_Dictionary.xlsx)
+- [NRI Future Risk Master Datasheet](https://github.com/fulton-ring/nri-future-risk/blob/main/public/NRI_Future_Risk_Master_Datasheet_12052024.xlsx)
+- [NRI Data Dictionary](https://github.com/fulton-ring/nri-future-risk/blob/main/public/NRI_Data_Dictionary.xlsx)
 
 [Donate To The Developers](https://buymeacoffee.com/herzo175)
 
