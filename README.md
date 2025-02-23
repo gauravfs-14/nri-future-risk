@@ -1,4 +1,4 @@
-# NRI Future Risk
+# Climate Informed Risk Index
 
 [Visit Tool](https://fulton-ring.github.io/nri-future-risk/)
 

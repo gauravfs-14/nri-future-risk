@@ -91,8 +91,7 @@ const CountyInfoModal = () => {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} Mean Global Temperature Projected Annual Loss
-                      Rating ($)
+                      {scenario} High Emissions Projected Annual Loss Rating ($)
                     </TableCell>
                     <TableCell>
                       {
@@ -105,7 +104,7 @@ const CountyInfoModal = () => {
 
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} Mean Global Temperature Projected Risk Rating
+                      {scenario} High Emissions Projected Risk Rating
                     </TableCell>
                     <TableCell>
                       {
@@ -122,7 +121,7 @@ const CountyInfoModal = () => {
 
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} Mean Global Temperature Hazard Multiplier
+                      {scenario} High Emissions Hazard Multiplier
                     </TableCell>
                     <TableCell>
                       {(selectedCounty as any)?.[
