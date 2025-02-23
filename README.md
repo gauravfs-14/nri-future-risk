@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# NRI Future Risk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Visit Tool](https://fulton-ring.github.io/nri-future-risk/)
 
-Currently, two official plugins are available:
+This tool is a replica of the National Risk Index (NRI) Future Risk tool, which
+was removed from the public by the US Government in February, 2025.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Donate To The Developers](https://buymeacoffee.com/herzo175)
 
-## Expanding the ESLint configuration
+## Architecture
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This tool is built using React and Leaflet. We use Vite
+as the bundler.
 
-- Configure the top-level `parserOptions` property like this:
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Leaflet](https://leafletjs.com/)
+- [Shadcn](https://ui.shadcn.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Running Locally
+
+To get started, clone the repository and run the following commands:
+
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+This will start the development server and open the tool in your default browser.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Hosting
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To keep this tool from being down again, we recommend forking this repository
+and hosting it with GitHub Pages. It currently has all the code needed to deploy
+to GitHub Pages, you'll just need to enable GitHub Pages in your fork's
+repository settings.
+
+More deployment guides to come as needed.
