@@ -19,7 +19,7 @@ export default function Home() {
   // TODO: set up donation link
 
   const hazardGraphImageUrl = useMemo(() => {
-    let imageUrl = "/";
+    let imageUrl = "/nri-future-risk/";
 
     if (hazard === Hazard.CFLD) {
       imageUrl += "CFLD";

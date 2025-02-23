@@ -148,15 +148,14 @@ const Map = () => {
     >
       <TileLayer
         attribution={`
-          Made By <a href="https://www.fultonring.com/">Fulton Ring</a>
-          <a href="https://github.com/fulton-ring/nri-future-risk">GitHub</a>
-          &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> 
-          &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> 
-          &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> 
-          &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors
+          Made By <a href="https://www.fultonring.com/">Fulton Ring</a>, 
+          &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a>, 
+          &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, 
+          Data from US Census Bureau, FEMA, and NOAA.
+          <a href="https://github.com/fulton-ring/nri-future-risk">View Source on GitHub</a>
         `}
-        // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        url="https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        // url="https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png"
       />
 
       {data && (

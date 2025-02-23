@@ -14,7 +14,7 @@ export const fetchJSON = async (url: string) => {
 
 export const useCounties = () =>
   useSWR<FeatureCollection<Geometry, CountyProperties>>(
-    "/combined_nri_counties_borders.json",
+    "/nri-future-risk/combined_nri_counties_borders.json",
     fetchJSON,
     {
       revalidateIfStale: false,
