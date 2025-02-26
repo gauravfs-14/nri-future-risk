@@ -91,7 +91,7 @@ const CountyInfoModal = () => {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} High Emissions Projected Annual Loss Rating ($)
+                      {scenario} Emissions Projected Annual Loss Rating ($)
                     </TableCell>
                     <TableCell>
                       {
@@ -104,7 +104,7 @@ const CountyInfoModal = () => {
 
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} High Emissions Projected Risk Rating
+                      {scenario} Emissions Projected Risk Rating
                     </TableCell>
                     <TableCell>
                       {
@@ -121,7 +121,7 @@ const CountyInfoModal = () => {
 
                   <TableRow>
                     <TableCell className="font-medium">
-                      {scenario} High Emissions Hazard Multiplier
+                      {scenario} Emissions Hazard Multiplier
                     </TableCell>
                     <TableCell>
                       {(selectedCounty as any)?.[
