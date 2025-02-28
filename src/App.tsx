@@ -17,7 +17,7 @@ export default function Home() {
   // TODO: URL routing to make easier to share
 
   const hazardGraphImageUrl = useMemo(() => {
-    let imageUrl = "/nri-future-risk/";
+    let imageUrl = "/";
 
     if (hazard === Hazard.CFLD) {
       imageUrl += "CFLD";
