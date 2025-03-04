@@ -15,7 +15,7 @@ import { Datasource, Hazard, Rating, Scenario } from "@/schema/risk";
 import Legend from "@/components/map/Legend";
 
 // Centered over continental US
-const center = { lat: 39.8283, lng: -98.5795 };
+const center = { lat: 31.9686, lng: -99.9018 };
 
 const getValueField = (
   hazard: Hazard,
@@ -140,7 +140,7 @@ const Map = () => {
   return (
     <MapContainer
       center={center}
-      zoom={4}
+      zoom={6}
       // zoomDelta={0.5}
       scrollWheelZoom={true}
       // style={{ height: 800, width: 1200 }}

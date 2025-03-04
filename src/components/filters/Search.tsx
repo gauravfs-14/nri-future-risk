@@ -31,18 +31,18 @@ const Search = () => {
       <PopoverTrigger asChild>
         <Button variant="outline" className="w-full justify-between">
           {selectedCounty
-            ? `${selectedCounty.COUNTY}, ${selectedCounty.STATEABBRV}`
-            : "Select County"}
+            ? `${selectedCounty.COUNTY}, TX`
+            : "Select Texas County"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="p-0" align="start">
         <Command className="rounded-lg border shadow-md lg:min-w-[450px]">
-          <CommandInput placeholder="Search Counties" />
+          <CommandInput placeholder="Search Texas Counties" />
           <CommandList>
-            <CommandEmpty>No results found.</CommandEmpty>
+            <CommandEmpty>No Texas counties found.</CommandEmpty>
             {data?.features && (
-              <CommandGroup heading="Counties">
+              <CommandGroup heading="Texas Counties">
                 {data.features.map(
                   (feature: Feature<Geometry, CountyProperties>) => (
                     <CommandItem
@@ -52,10 +52,7 @@ const Search = () => {
                         setOpen(false);
                       }}
                     >
-                      <span>
-                        {feature.properties.COUNTY},{" "}
-                        {feature.properties.STATEABBRV}
-                      </span>
+                      <span>{feature.properties.COUNTY}, TX</span>
                     </CommandItem>
                   )
                 )}

@@ -12,13 +12,24 @@ export const fetchJSON = async (url: string) => {
   return res.json();
 };
 
-export const useCounties = () =>
-  useSWR<FeatureCollection<Geometry, CountyProperties>>(
-    "/combined_nri_counties_borders.json",
-    fetchJSON,
-    {
-      revalidateIfStale: false,
-      revalidateOnFocus: false,
-      revalidateOnReconnect: false,
-    }
-  );
+export const useCounties = () => {
+  const { data, ...rest } = useSWR<
+    FeatureCollection<Geometry, CountyProperties>
+  >("/combined_nri_counties_borders.json", fetchJSON, {
+    revalidateIfStale: false,
+    revalidateOnFocus: false,
+    revalidateOnReconnect: false,
+  });
+
+  // Filter for Texas counties only
+  const texasData = data
+    ? {
+        ...data,
+        features: data.features.filter(
+          (feature) => feature.properties.STATEABBRV === "TX"
+        ),
+      }
+    : data;
+
+  return { data: texasData, ...rest };
+};
